@@ -11,11 +11,11 @@
 #define RULESET_STOP_PROCESSING 1
 
 // -- Injection delays
-GLOBAL_VAR_INIT(dynamic_latejoin_delay_min, (5 MINUTES))
+GLOBAL_VAR_INIT(dynamic_latejoin_delay_min, (10 MINUTES))
 GLOBAL_VAR_INIT(dynamic_latejoin_delay_max, (20 MINUTES))
 
-GLOBAL_VAR_INIT(dynamic_midround_delay_min, (15 MINUTES))
-GLOBAL_VAR_INIT(dynamic_midround_delay_max, (25 MINUTES))
+GLOBAL_VAR_INIT(dynamic_midround_delay_min, (25 MINUTES))
+GLOBAL_VAR_INIT(dynamic_midround_delay_max, (35 MINUTES))
 
 // Are HIGHLANDER_RULESETs allowed to stack?
 GLOBAL_VAR_INIT(dynamic_no_stacking, TRUE)
@@ -30,7 +30,7 @@ GLOBAL_VAR_INIT(dynamic_curve_width, 1.8)
 // If enabled only picks a single starting rule and executes only autotraitor midround ruleset. 
 GLOBAL_VAR_INIT(dynamic_classic_secret, FALSE)
 // How many roundstart players required for high population override to take effect.
-GLOBAL_VAR_INIT(dynamic_high_pop_limit, 20)
+GLOBAL_VAR_INIT(dynamic_high_pop_limit, 30)
 // If enabled does not accept or execute any rulesets.
 GLOBAL_VAR_INIT(dynamic_forced_extended, FALSE)
 // How high threat is required for HIGHLANDER_RULESETs stacking.
