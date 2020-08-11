@@ -63,7 +63,7 @@
 	restricted_roles = list("AI","Cyborg")
 	required_candidates = 1
 	weight = 7
-	cost = 5
+	cost = 10
 	requirements = list(40,30,20,10,10,10,10,10,10,10)
 	high_population_requirement = 10
 	repeatable = TRUE
