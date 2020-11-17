@@ -120,6 +120,14 @@
 	breakouttime = 30 SECONDS
 	cuffsound = 'sound/weapons/cablecuff.ogg'
 
+/obj/item/restraints/handcuffs/tape
+	name = "tape restraints"
+	desc = "A bunch of tape used to tie someone."
+	icon_state = "tape_cross"
+	item_state = null
+	icon = 'icons/obj/bureaucracy.dmi'
+	breakouttime = 20 SECONDS
+
 /obj/item/restraints/handcuffs/cable/Initialize(mapload, param_color)
 	. = ..()
 

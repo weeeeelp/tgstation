@@ -299,6 +299,14 @@
 	darkness_view = 1
 	dog_fashion = /datum/dog_fashion/head
 
+/obj/item/clothing/glasses/blindfold/tape
+	name = "length of tape"
+	desc = "It's a robust DIY blindfold!"
+	icon = 'icons/obj/bureaucracy.dmi'
+	icon_state = "tape_cross"
+	item_state = null
+	darkness_view = -1
+
 /obj/item/clothing/glasses/blindfold/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(slot == SLOT_GLASSES)

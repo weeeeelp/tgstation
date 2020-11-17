@@ -8,6 +8,18 @@
 	gas_transfer_coefficient = 0.9
 	equip_delay_other = 20
 
+/obj/item/clothing/mask/muzzle/tape
+	name = "length of tape"
+	desc = "It's a robust DIY muzzle!"
+	icon = 'icons/obj/bureaucracy.dmi'
+	icon_state = "tape_cross"
+	item_state = null
+	w_class = WEIGHT_CLASS_TINY
+
+/obj/item/clothing/mask/muzzle/handle_speech(datum/source, list/speech_args)
+	if(!CHECK_BITFIELD(clothing_flags, VOICEBOX_DISABLED))
+		speech_args[SPEECH_MESSAGE] =  pick("Mmfph!", "Mmmf mrrfff!", "Mmmf mnnf!")
+
 /obj/item/clothing/mask/muzzle/attack_paw(mob/user)
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
